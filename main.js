@@ -53,6 +53,17 @@ const dNames = function(names){
    return result
 }
 
+const dNames = function(names){
+  const result = []
+
+  for(name of names){
+
+    if(name.slice(0, 1) === 'd' || name.slice(0, 1) === 'D'){
+      result.push(name)
+    }
+  }
+   return result
+}
 
 
 /*********************************
