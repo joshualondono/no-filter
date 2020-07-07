@@ -2,8 +2,56 @@
  * YOUR CODE HERE *
  ******************/
 
+const onlyOdds = function(nums){
+  let result = []
+  
+  for(const num of nums){
+    if(num % 2 !== 0){
+      result.push(num)
+    }
+  }
+  
+  return result 
+  
+}
 
+const onlyEvens = function(nums){
+  let result = []
+  
+  for(const num of nums){
+    if(num % 2 === 0){
+      result.push(num)
+    }
+  }
+  
+  return result 
+  
+}
 
+const shortNamesOnly = function(names){
+  const result = []
+  
+  for(name of names){
+    
+    if(name.length < 7){
+     result.push(name)
+    }
+  }
+  
+  return result
+}
+
+const dNames = function(names){
+  const result = []
+
+  for(name of names){
+
+    if(name.toLowerCase().slice(0, 1) === 'd'){
+      result.push(name)
+    }
+  }
+   return result
+}
 
 
 
